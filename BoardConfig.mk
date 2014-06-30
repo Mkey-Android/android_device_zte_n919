@@ -105,7 +105,6 @@ TARGET_USERIMAGES_USE_EXT4 := true
 
 # Recovery
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/zte/n919/recovery/recovery-keys.c
-BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 TARGET_RECOVERY_INITRC := device/zte/n919/recovery/init.rc
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 DEVICE_RESOLUTION := 540x960
@@ -131,9 +130,9 @@ BOARD_SEPOLICY_UNION += \
 
 # USB
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
-BOARD_VOLD_MAX_PARTITIONS := 19
+BOARD_VOLD_MAX_PARTITIONS := 20
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/msm_hsusb/gadget/lun%d/file"
-TARGET_USE_CUSTOM_SECOND_LUN_NUM := 1
+BOARD_VOLD_DISC_HAS_MULTIPLE_MAJORS := true
 
 # Web Rendering
 ENABLE_WEBGL := true
