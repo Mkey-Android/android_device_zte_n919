@@ -142,9 +142,7 @@ PRODUCT_COPY_FILES += \
     device/zte/n919/configs/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
 
 PRODUCT_COPY_FILES += \
-    device/zte/n919/configs/audio_policy.conf:system/etc/audio_policy.conf \
-    device/zte/n919/configs/media_codecs_7627a.xml:system/etc/media_codecs.xml \
-    device/zte/n919/configs/media_profiles_7627a.xml:system/etc/media_profiles.xml
+    device/zte/n919/configs/audio_policy.conf:system/etc/audio_policy.conf 
 
 PRODUCT_COPY_FILES += \
     device/zte/n919/idc/qwerty.idc:system/usr/idc/qwerty.idc \
@@ -162,7 +160,8 @@ PRODUCT_COPY_FILES += \
 # Media
 PRODUCT_COPY_FILES += \
     device/zte/n919/etc/media_profiles.xml:system/etc/media_profiles.xml \
-    device/zte/n919/etc/media_codecs.xml:system/etc/media_codecs.xml
+    device/zte/n919/etc/media_codecs.xml:system/etc/media_codecs.xml \
+    device/zte/n919/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml
 
 # transmitter isn't supported
 PRODUCT_PROPERTY_OVERRIDES += \
